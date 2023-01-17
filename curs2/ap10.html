@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suma numere impare</title>
+</head>
+
+<body>
+    <script>
+        let n = eval(prompt('Introduceti un numar', 10));
+        let i = 1;
+        let suma = 0;
+        while (i < n) {
+            console.log(i);
+            if (i % 2 == 1) {
+                suma = suma + i;
+
+            }
+            i += 2;
+        }
+        console.log('suma num impare=', suma);
+        suma = 0;
+        let j = 1;
+        do {
+            console.log(j);
+
+            suma = suma + j;
+            j += 2;
+        } while (j < n);
+        console.log('suma numere impare=', suma);
+    </script>
+</body>
+
+</html>
